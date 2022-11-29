@@ -29,9 +29,6 @@ class Lion:
     def Age(self):
         return self.__age
 
-    def Name(self):
-        self.__name
-
     @Age.setter
     def Age(self, value):
         if value is int:
@@ -39,6 +36,10 @@ class Lion:
                 self.__age = value
             else:
                 print("Вообще-то у меня есть возраст!")
+    @property
+    def Name(self):
+        return self.__name
+
 class Panda:
 
     def __init__(self, name, age):
